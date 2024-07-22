@@ -2,6 +2,8 @@
 
 > This is a fullstack "Listings" app provided as part of recruitment process I participated in.
 
+A Postman collection export is available in `docs` folder.
+
 ### Please read!
 this is a project submitted for recruitment purpose.
 
