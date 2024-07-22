@@ -23,3 +23,8 @@ this is a project submitted for recruitment purpose.
 
 ## Implementation Decisions
 - I used Monorepo structure to manage code for both frontend and backend. I used `pnpm` and `turborepo`.
+
+## Screenshots
+![listing apartments](https://github.com/aigdonia/ez-apartment-ts-node-next-fullstack/blob/main/ez-listing-filter.jpeg?raw=true)
+
+![Single Apartment](https://github.com/aigdonia/ez-apartment-ts-node-next-fullstack/blob/main/ez-listing-single.jpeg?raw=true)
