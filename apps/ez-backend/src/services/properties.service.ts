@@ -17,7 +17,12 @@ export default class PropertiesService {
    * @returns Saved property
    */
   async createProperty(property: PropertyDocument) {
-  const newProperty = new Property(property);
-  return newProperty.save();
-}
+    const newProperty = new Property(property);
+    return newProperty.save();
+  }
+
+  async filterProperties(params: any) {
+    const properties = await Property.find();
+    return properties;
+  }
 }

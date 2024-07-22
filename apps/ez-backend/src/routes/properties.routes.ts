@@ -19,7 +19,10 @@ export default class PropertiesAPI {
 
   @GET()
   async filterProperties(req: Request, res: Response) {
-    res.json({ message: "Filter Properties" });
+    const {query: params} = req;
+    const properties = await this.propertiesService.filterProperties(params);
+
+    res.json({ message: "Filter Properties", params, properties });
   }
 
   //TODO: Validate request body using zod
