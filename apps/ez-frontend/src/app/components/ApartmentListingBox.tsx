@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { BedIcon, DollarSignIcon } from "@/components/icons";
 import React from "react";
+import Link from "next/link";
 interface ComponentProps {
   children: React.ReactNode;
 };
@@ -26,8 +27,10 @@ export default function ApartmentListingBox({ apartment }: { apartment: any }) {
           <DollarSignIcon className="w-5 h-5" />
           <span>${apartment.price}</span>
         </div>
-        <Button variant="outline" className="mt-4 w-full">
-          View Details
+        <Button variant="outline" className="mt-4 w-full" asChild>
+          <Link href={`properties/${apartment._id}`}>
+            View Details
+          </Link>
         </Button>
       </div>
     </div>
