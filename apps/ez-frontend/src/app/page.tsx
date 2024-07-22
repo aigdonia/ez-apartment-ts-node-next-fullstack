@@ -26,7 +26,7 @@ export default function HomePage() {
       </div> :
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4 md:p-6 max-h-[80vh] overflow-y-auto">
-            {apartments.map((apartment) => (<ApartmentListingBox key={apartment.id} apartment={apartment} />))}
+            {apartments.map((apartment: any) => (<ApartmentListingBox key={apartment.id} apartment={apartment} />))}
           </div>
 
           {/* TODO: Add pagination */}

@@ -1,5 +1,5 @@
 
-export function BedIcon(props) {
+export function BedIcon(props: any) {
   return (
     <svg
       {...props}
@@ -22,7 +22,7 @@ export function BedIcon(props) {
 }
 
 
-export function ChevronDownIcon(props) {
+export function ChevronDownIcon(props: any) {
   return (
     <svg
       {...props}
@@ -42,7 +42,7 @@ export function ChevronDownIcon(props) {
 }
 
 
-export function DollarSignIcon(props) {
+export function DollarSignIcon(props: any) {
   return (
     <svg
       {...props}
@@ -63,7 +63,7 @@ export function DollarSignIcon(props) {
 }
 
 
-export function MapPinIcon(props) {
+export function MapPinIcon(props: any) {
   return (
     <svg
       {...props}
@@ -84,7 +84,7 @@ export function MapPinIcon(props) {
 }
 
 
-export function SettingsIcon(props) {
+export function SettingsIcon(props: any) {
   return (
     <svg
       {...props}
@@ -105,7 +105,7 @@ export function SettingsIcon(props) {
 }
 
 
-export function XIcon(props) {
+export function XIcon(props: any) {
   return (
     <svg
       {...props}
@@ -125,7 +125,7 @@ export function XIcon(props) {
   )
 }
 
-export function HouseIcon(props) {
+export function HouseIcon(props: any) {
   return (
     <svg
       {...props}
@@ -145,7 +145,7 @@ export function HouseIcon(props) {
   )
 }
 
-export function BathIcon(props) {
+export function BathIcon(props: any) {
   return (
     <svg
       {...props}
@@ -169,7 +169,7 @@ export function BathIcon(props) {
 }
 
 
-export function OptionIcon(props) {
+export function OptionIcon(props: any) {
   return (
     <svg
       {...props}
@@ -190,7 +190,7 @@ export function OptionIcon(props) {
 }
 
 
-export function RulerIcon(props) {
+export function RulerIcon(props: any) {
   return (
     <svg
       {...props}
@@ -209,14 +209,6 @@ export function RulerIcon(props) {
       <path d="m11.5 9.5 2-2" />
       <path d="m8.5 6.5 2-2" />
       <path d="m17.5 15.5 2-2" />
-    </svg>
-  )
-}
-
-export function ArrowLeftIcon(props) {
-  return (
-    <svg>
-      
     </svg>
   )
 }
