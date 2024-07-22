@@ -1,4 +1,5 @@
 import express, { Request, Response } from "express";
+import cors from "cors"; 
 import { createContainer, asClass, asValue} from "awilix";
 import dotenv from "dotenv";
 import { loadControllers, scopePerRequest } from "awilix-express";
@@ -19,10 +20,12 @@ const diContainer = createContainer().register({
   mongoose: asValue(mongoose),
   propertiesService: asClass(PropertiesService).singleton()
 });
+app.use(cors())
 
 app.use(scopePerRequest(diContainer));
 
 app.use(loadControllers('routes/*.routes.js', {cwd: __dirname}));
+
 
 app.listen(PORT, () => { 
   console.log("Server running at PORT: ", PORT); 
